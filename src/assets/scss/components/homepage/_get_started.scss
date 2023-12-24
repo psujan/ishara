@@ -1,0 +1,36 @@
+// reseting  some default bootstrap css properties for accordion
+.accordion-col {
+  .accordion-item {
+    margin-bottom: 12px;
+    box-shadow: none;
+    border: none;
+    border-radius: 4px;
+    .accordion-button {
+      color: $primary;
+      font-weight: 500;
+      &:focus {
+        border: none;
+        outline: 0;
+        box-shadow: none;
+      }
+      &:not(.collapsed) {
+        background-color: #fff;
+        box-shadow: none;
+      }
+      &:after {
+        background-image: url("../../../images/icons/arrow-down-s-line.svg");
+      }
+    }
+  }
+}
+
+.get-started-col{
+  background-image: url('../../../images/get-started-new-nobg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding:0 20px;
+  min-height: 450px;
+  position: relative;
+  top:-70px;
+}

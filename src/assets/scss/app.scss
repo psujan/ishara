@@ -1,0 +1,22 @@
+
+// $black:#080808;
+// $gray-200:#dddddd;
+// $gray-100:#f9f9f9;
+// $primary:#18a7f5;
+// $white:#fff;
+@import './abstracts/variables';
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import './abstracts/reset';
+
+
+// global font family
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+body{
+  font-family: 'Inter', sans-serif;
+  color:$black;
+  font-size: 15px;
+}
+
+@import './components';
+

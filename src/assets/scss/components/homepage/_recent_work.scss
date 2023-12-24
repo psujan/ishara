@@ -1,0 +1,9 @@
+.recent-work-wrap {
+  height: 250px;
+  overflow: hidden;
+  img{
+    object-fit: cover;
+  }
+  width: 100%;
+  background-color: $gray-100;
+}

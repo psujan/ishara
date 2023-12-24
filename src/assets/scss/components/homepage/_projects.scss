@@ -1,0 +1,54 @@
+.project-col {
+  position: relative;
+}
+
+.project-image-wrap {
+  position: relative;
+  .circle {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    background: $white;
+    border-radius: 50%;
+    z-index: 1;
+    .project-img {
+      position: absolute;
+      right: 100px;
+      top: 65px;
+      z-index: 2;
+    }
+
+    .animate-circle1 {
+      animation-delay: 1s;
+    }
+
+    .animate-circle2 {
+      animation-delay: 2s;
+    }
+
+    .animate-circle3 {
+      animation-delay: 3s;
+    }
+    > div:not(:first-child) {
+      animation: growAndFade 3s infinite ease-out;
+      border-radius: 50%;
+      height: 100%;
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+      background-color: $primary;
+    }
+
+    @keyframes growAndFade {
+      0% {
+        opacity: 0.25;
+        transform: scale(0);
+      }
+
+      100% {
+        opacity: 0;
+        transform: scale(1);
+      }
+    }
+  }
+}

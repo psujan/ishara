@@ -1,0 +1,50 @@
+.app-logo {
+  cursor: pointer;
+  span {
+    font-size: 32px;
+    font-weight: 700;
+  }
+}
+
+.header {
+  border-bottom: 1px solid $gray-200;
+  height: 68px;
+  position: sticky;
+  top:0;
+  z-index:999;
+  background-color: $white;
+  // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.header-menu {
+  height: inherit;
+  ul {
+    display: inline-flex;
+    height: inherit;
+    li {
+      height: inherit;
+      display: flex;
+      align-items: center;
+      a {
+        height: inherit;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        font-size: 16px;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition:0.3s ease-out;
+        &:hover {
+          background-color: $gray-100;
+          color:$primary;
+        }
+      }
+    }
+  }
+}
+
+
+.header-shadow {
+  box-shadow: rgba(189, 189, 189, 0.2) 0px 7px 29px 0px;
+  border-bottom:1px solid transparent;
+}

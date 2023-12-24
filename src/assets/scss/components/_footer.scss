@@ -1,0 +1,46 @@
+.footer{
+  .logo{
+    width:130px;
+    position: relative;
+    top:-25px;
+    img{
+      height:80px;
+      max-width: 100%;
+    }
+  }
+}
+
+.footer-col{
+  h4{
+    font-size: 1.12rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+}
+
+.footer-link{
+  li{
+    list-style: none;
+    line-height: 2.2;
+    a{
+      text-decoration: none;
+      color:$gray-500;
+      transition: 0.3s ease-out;
+      &:hover{
+        color: $primary;
+        text-decoration: underline;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.find-us{
+  a{
+    font-size: 24px;
+    &:hover{
+      text-decoration: none !important;
+    }
+  }
+}

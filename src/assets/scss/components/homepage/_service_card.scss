@@ -1,0 +1,36 @@
+.service-card {
+  border: 1px solid $gray-200;
+  border-radius: 8px;
+  padding: 20px;
+  // margin: 18px 36px;
+  height: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.service-card-head {
+  h3 {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    span {
+      margin-left: 12px;
+    }
+    i{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding:8px;
+      background:$primary-light;
+      border-radius: 8px;
+    }
+  }
+}
+
+.service-card-content {
+  p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}

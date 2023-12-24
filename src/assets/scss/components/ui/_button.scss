@@ -1,0 +1,22 @@
+.find-more-btn {
+  font-size: 15px;
+  text-decoration: none;
+  border: 1px solid $primary;
+  border-radius: 4px;
+  padding: 10px 20px;
+  transition: 0.5s ease-out;
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+}
+
+.btn-newsletter {
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: $primary;
+  border-radius: 4px;
+  margin-left:8px;
+  border:none;
+  color:$white;
+}
