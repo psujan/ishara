@@ -1,3 +1,15 @@
+@mixin mobile-menu-icon-style() {
+  cursor: pointer;
+  background: $gray-150;
+  display: flex;
+  padding: 6px;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: $primary;
+}
+
 .app-logo {
   cursor: pointer;
   span {
@@ -10,41 +22,91 @@
   border-bottom: 1px solid $gray-200;
   height: 68px;
   position: sticky;
-  top:0;
-  z-index:999;
+  top: 0;
+  z-index: 999;
   background-color: $white;
   // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .header-menu {
   height: inherit;
-  ul {
-    display: inline-flex;
+}
+
+#header-menu-items {
+  display: flex;
+  flex-direction: row;
+  height: inherit;
+  li {
     height: inherit;
-    li {
+    display: flex;
+    align-items: center;
+    a {
       height: inherit;
       display: flex;
       align-items: center;
-      a {
-        height: inherit;
-        display: flex;
-        align-items: center;
-        padding: 0 20px;
-        font-size: 16px;
-        text-decoration: none;
-        border-bottom: 1px solid transparent;
-        transition:0.3s ease-out;
-        &:hover {
-          background-color: $gray-100;
-          color:$primary;
-        }
+      padding: 0 20px;
+      font-size: 16px;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: 0.3s ease-out;
+      &:hover {
+        background-color: $gray-100;
+        color: $primary;
       }
     }
   }
 }
 
-
 .header-shadow {
   box-shadow: rgba(189, 189, 189, 0.2) 0px 7px 29px 0px;
-  border-bottom:1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.mobile-header {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header-menu,
+  #contact-btn {
+    display: none !important;
+  }
+
+  .mobile-header {
+    display: block;
+    .mobile-menu-icon {
+      @include mobile-menu-icon-style();
+    }
+  }
+
+  .mobile-header-menu {
+    min-width: 280px;
+    overflow: hidden;
+    height: 100vh;
+    background-color: $white;
+    position: absolute;
+    z-index: 1000;
+    top: -20px;
+    right: 0;
+    // border: 1px solid red;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px 0;
+  }
+
+  #header-menu-items {
+    flex-direction: column;
+    li {
+      height: auto;
+      width: 100%;
+      a {
+        width: 100%;
+        padding: 20px;
+      }
+    }
+  }
+
+  .mobile-menu-close {
+    @include mobile-menu-icon-style();
+    margin:8px;`
+  }
 }

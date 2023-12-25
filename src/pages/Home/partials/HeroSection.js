@@ -5,8 +5,8 @@ export default function HeroSection() {
     <section className="section hero-section">
       <div className="container">
         <div className="row px-4">
-          <div className="col-sm-12 col-md-6">
-            <div className="hero-head">
+          <div className="col-sm-12 col-md-12 col-lg-6">
+            <div className="hero-head text-sm-center text-lg-start">
               <h1>Your Dedicated IT  Solution</h1>
               <p>
                 We provide dedicated IT solutions to your buisness and help you
@@ -14,7 +14,7 @@ export default function HeroSection() {
               </p>
             </div>
           </div>
-          <div className="col-sm-12 col-md-6">
+          <div className="col-sm-12 col-md-12 col-lg-6">
             <div className="hero-img">
               <img src={HeroImg} alt="HERO_IMG" />
             </div>

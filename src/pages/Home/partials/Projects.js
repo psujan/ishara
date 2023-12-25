@@ -16,7 +16,7 @@ export default function Projects() {
     <section className="section">
       <div className="container">
         <div className="row position-relative">
-          <div className="col-12 col-sm-6">
+          <div className="col-sm-12 col-lg-6 mb-sm-4 mb-lg-0">
             <div className="project-card">
               <h2 className="section-heading">
                 Leveraging The Power Of Mobile App
@@ -39,7 +39,7 @@ export default function Projects() {
             </div>
           </div>
 
-          <div className="col-12 col-sm-6 project-col d-flex justify-content-end">
+          <div className="col-sm-12 col-lg-6 project-col d-flex justify-content-end">
             <div className="project-image-wrap">
               <div className="circle">
                 <div className="project-img">

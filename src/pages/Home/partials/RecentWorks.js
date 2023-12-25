@@ -24,7 +24,7 @@ export default function RecentWorks() {
 
         <div className="row">
           {images.map((img, i) => (
-            <div className="col-12 col-sm-4 mb-4" key={i}>
+            <div className="col-sm-12 col-md-6 col-lg-4 mb-4" key={i}>
               <div className="recent-work-wrap">
                 <img src={img} alt="" className="w-100 h-100" />
               </div>
