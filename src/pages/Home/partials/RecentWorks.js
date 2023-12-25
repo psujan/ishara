@@ -33,7 +33,7 @@ export default function RecentWorks() {
         </div>
         <div className="mt-3 text-center">
           <button
-            className="btn  btn-outline-primary"
+            className="app-btn app-btn-outline-primary"
             style={{ minWidth: "180px" }}
           >
             View All

@@ -5,12 +5,12 @@ import UserImg3 from  '../../../assets/images/user3.avif';
 export default function Testimonilas() {
   return (
     <section className="section" id="testimonial">
-      <div className="d-flex">
+      <div className="d-flex flex-column flex-md-row">
         <div className="testimonial-left bg-primary-right">
           <div className="testimonial-highlight">
             <h2 className="section-heading">Our Clients Say</h2>
             <button
-              className="btn btn-rounded btn-outline-primary"
+              className="app-btn btn-rounded app-btn-outline-primary"
               style={{ borderRadius: "30px" }}
             >
               View All Stories

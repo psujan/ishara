@@ -33,7 +33,7 @@ export default function Projects() {
                   effective for students and teachers across NSW.
                 </p>
               </div>
-              <a href="/" className="find-more-btn d-inline-block">
+              <a href="/" className="app-btn app-btn-outline-primary d-inline-block">
                 Find More<i className="ri-arrow-right-line ps-2"></i>
               </a>
             </div>

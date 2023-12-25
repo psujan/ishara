@@ -1,3 +1,42 @@
+.app-btn{
+  padding:12px 25px;
+  border:1px solid transparent;
+  border-radius: 4px;
+  font-size: inherit;
+  background-color: $gray-150;
+  transition: 0.3s ease-out;
+  text-decoration: none;
+}
+
+.app-btn-outline-primary{
+  border:1px solid $primary;
+  color:$primary;
+  background-color: inherit;
+  &:hover{
+    background-color: $primaryHover;
+    color:$white;
+  }
+}
+
+.app-btn-round{
+  border-radius: 30px;
+}
+
+.app-btn-hover{
+  &:hover{
+    border:1px solid $primary;
+    color:$primary;
+  }
+}
+
+.app-btn-primary{
+  background-color: $primary;
+  color:$white;
+  &:hover{
+    background-color: $primaryHover;
+  }
+}
+
 .find-more-btn {
   font-size: 15px;
   text-decoration: none;

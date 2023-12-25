@@ -2,7 +2,7 @@ import useScrollingUp from "../../hooks/useScrollingUp";
 
 export default function Header() {
   const scrolled = useScrollingUp();
-  console.log('scroll', scrolled);
+  console.log("scroll", scrolled);
   return (
     <header className={`header   ${scrolled ? "header-shadow" : ""}`}>
       <div className="container h-100">
@@ -26,7 +26,9 @@ export default function Header() {
               </li>
             </ul>
           </nav>
-          <button className="btn btn-primary">Contact Us</button>
+          <div>
+            <button className="app-btn app-btn-hover">Contact Us</button>
+          </div>
         </div>
       </div>
     </header>

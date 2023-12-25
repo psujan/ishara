@@ -5,7 +5,7 @@ export default function Footer() {
       <section className="section bg-white">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-sm-6 newsletter text-center">
+            <div className="col-sm-12 col-md-6 newsletter text-center">
               <h2 className="section-heading">Join Our Newsletter</h2>
               <p className="text-muted mb-3">
                 Sign up to stay updated with the latest insights, news, and
@@ -17,7 +17,7 @@ export default function Footer() {
                   placeholder="Your Email Address..."
                   className="form-control newsletter-input"
                 />
-                <button className="btn-newsletter">Subscribe</button>
+                <button className="app-btn app-btn-primary ms-2">Subscribe</button>
               </form>
             </div>
           </div>

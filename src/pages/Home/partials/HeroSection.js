@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section className="section hero-section">
       <div className="container">
         <div className="row px-4">
-          <div className="col-6">
+          <div className="col-sm-12 col-md-6">
             <div className="hero-head">
               <h1>Your Dedicated IT  Solution</h1>
               <p>
@@ -14,7 +14,7 @@ export default function HeroSection() {
               </p>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-sm-12 col-md-6">
             <div className="hero-img">
               <img src={HeroImg} alt="HERO_IMG" />
             </div>
