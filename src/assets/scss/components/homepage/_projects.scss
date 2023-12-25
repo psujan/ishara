@@ -52,3 +52,18 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .project-image-wrap {
+    .circle {
+      .project-img {
+        max-width: 80%;
+        margin: 0 auto;
+        right: -10px;
+        .rsis-image {
+          max-width: 80% !important;
+        }
+      }
+    }
+  }
+}

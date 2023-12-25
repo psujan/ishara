@@ -44,9 +44,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .testimonial-right {
+    padding: 20px 0;
+  }
 
-@media screen and (max-width:768px) {
-  .testimonial-card{
+  .testimonial-card {
     max-width: 100%;
   }
 }

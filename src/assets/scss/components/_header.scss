@@ -64,21 +64,28 @@
 
 .mobile-menu-wrap.is-closed {
   width: 0px;
+  opacity: 0;
   transition: 0.3s ease-out;
 }
 
 .mobile-menu-icon {
+  display: none !important;
   @include mobile-menu-icon-style();
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .header-menu,
   #contact-btn {
     display: none !important;
   }
 
+  .mobile-menu-icon {
+    display: block !important;
+  }
+
   .mobile-menu-wrap.is-opened {
     width: 280px;
+    opacity: 1;
     transition: 0.3s ease-out;
   }
 

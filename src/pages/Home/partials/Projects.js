@@ -2,15 +2,13 @@ import Image1 from "../../../assets/images/projectimg1.jpg";
 import Image2 from "../../../assets/images/projectimg2.jpg";
 import Image3 from "../../../assets/images/projectimg3.png";
 
-
 import SimpleImageSlider from "react-simple-image-slider";
 const images = [{ url: Image1 }, { url: Image2 }, { url: Image3 }];
 
 export default function Projects() {
-
-  const handleCompleteSlide = ()=>{
-    console.log('slide completed')
-  }
+  const handleCompleteSlide = () => {
+    console.log("slide completed");
+  };
 
   return (
     <section className="section">
@@ -33,9 +31,14 @@ export default function Projects() {
                   effective for students and teachers across NSW.
                 </p>
               </div>
-              <a href="/" className="app-btn app-btn-outline-primary d-inline-block">
-                Find More<i className="ri-arrow-right-line ps-2"></i>
-              </a>
+              <div className="text-center text-lg-start">
+                <a
+                  href="/"
+                  className="app-btn app-btn-outline-primary d-inline-block"
+                >
+                  Find More<i className="ri-arrow-right-line ps-2"></i>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -51,14 +54,13 @@ export default function Projects() {
                     showBullets={false}
                     showNavs={false}
                     autoPlay={true}
-                    onCompleteSlide={()=>handleCompleteSlide()}
+                    onCompleteSlide={() => handleCompleteSlide()}
                     bgColor="#fff"
                   />
                 </div>
                 <div className="animate-circle1"></div>
                 <div className="animate-circle2"></div>
                 <div className="animate-circle3"></div>
-
               </div>
             </div>
           </div>

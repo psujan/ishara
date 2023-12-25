@@ -1,33 +1,44 @@
-
-
-.hero-section{
-  padding-top:120px
+.hero-section {
+  padding-top: 120px;
 }
 
-.hero-head{
-  h1{
+.hero-head {
+  h1 {
     font-size: 36px;
     font-weight: 800;
-    margin-bottom:20px;
-    line-height:1.8;
+    margin-bottom: 20px;
+    line-height: 1.8;
   }
 
-  p{
+  p {
     line-height: 1.6;
-    width:80%;
+    width: 80%;
   }
 }
 
-.hero-img{
-  margin-top:-80px
+.hero-img {
+  margin-top: -80px;
 }
 
-@media screen and (max-width:768px) {
-  .hero-img{
+@media screen and (max-width: 768px) {
+  .hero-section {
+    padding-top: 40px;
+  }
+
+  .hero-img {
     max-width: 500px;
-    margin-top:0;
-    img{
+    margin-top: 0;
+    img {
       max-width: 100%;
+    }
+  }
+
+  .hero-head {
+    h1 {
+      font-size: 24px;
+    }
+    p {
+      width: 100%;
     }
   }
 }
