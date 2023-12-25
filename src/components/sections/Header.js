@@ -1,9 +1,16 @@
 import useScrollingUp from "../../hooks/useScrollingUp";
+import ContactBtn from "./partials/ContactBtn";
 import HeaderMenu from "./partials/HeaderMenu";
+import { useState } from "react";
 
 export default function Header() {
   const scrolled = useScrollingUp();
-  console.log("scroll", scrolled);
+  const [menuState, setMenuState] = useState(false);
+
+  const handlleMobileMenu = (state) => {
+    setMenuState(state);
+  };
+
   return (
     <header className={`header   ${scrolled ? "header-shadow" : ""}`}>
       <div className="container h-100">
@@ -14,20 +21,27 @@ export default function Header() {
           <nav className="header-menu d-flex align-items-center">
             <HeaderMenu></HeaderMenu>
           </nav>
-          <div id="contact-btn">
-            <button className="app-btn app-btn-hover">Contact Us</button>
-          </div>
-          <div className="mobile-header">
-            <span className="mobile-menu-icon">
-              <i className="ri-menu-line"></i>
-            </span>
-            <div className="mobile-header-menu">
-              <span className="d-inline-block mobile-menu-close">
-                <i className="ri-close-line"></i>
-              </span>
-              <HeaderMenu appendClass={"flex-column"} />
-            </div>
-          </div>
+          <ContactBtn />
+          <span
+            className="mobile-menu-icon"
+            onClick={() => handlleMobileMenu(true)}
+          >
+            <i className="ri-menu-line"></i>
+          </span>
+        </div>
+      </div>
+      <div
+        className={`mobile-menu-wrap ${menuState ? "is-opened" : "is-closed"}`}
+      >
+        <div className="mobile-header-menu">
+          <span
+            className="d-inline-block mobile-menu-close"
+            onClick={() => handlleMobileMenu(false)}
+          >
+            <i className="ri-close-line"></i>
+          </span>
+          <HeaderMenu appendClass={"flex-column"} />
+          <ContactBtn id={"contact-btn-mobile"} className="ms-2" />
         </div>
       </div>
     </header>
