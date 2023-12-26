@@ -1,5 +1,3 @@
-import ProjectStepsAccordion from "./components/ProjectStepsAccordion";
-
 export default function ProjectIdea() {
   return (
     <section className="section section-gradient">
