@@ -1,17 +1,22 @@
-export default function HeaderMenu({appendClass}) {
+import { Link } from "react-router-dom";
+
+export default function HeaderMenu({ appendClass }) {
   return (
-    <ul className={`d-flex align-items-center ${appendClass}`} id="header-menu-items">
+    <ul
+      className={`d-flex align-items-center ${appendClass}`}
+      id="header-menu-items"
+    >
       <li>
-        <a href="/">Home</a>
+        <Link to="/">Home</Link>
       </li>
       <li>
-        <a href="/">About</a>
+        <Link to="/about">About</Link>
       </li>
       <li>
-        <a href="/">Portfolio</a>
+        <Link to="/portfolio">Portfolio</Link>
       </li>
       <li>
-        <a href="/">Blog</a>
+        <Link to="/blog">Blog</Link>
       </li>
     </ul>
   );

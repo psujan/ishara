@@ -1,9 +1,10 @@
 import "./assets/scss/app.scss";
-import Homepage from "./pages/Home/Homepage";
+import AppRoutes from "./route";
+
 function App() {
   return (
     <>
-      <Homepage></Homepage>
+      <AppRoutes />
     </>
   );
 }

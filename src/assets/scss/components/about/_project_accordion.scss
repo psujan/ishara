@@ -1,0 +1,30 @@
+.next-step-col {
+  padding-left: 40px;
+}
+
+.next-steps {
+  li {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    &:before {
+      content: "\F309";
+      font-family: remixicon !important;
+      width: 32px;
+      height: 32px;
+      margin-right: 12px;
+      padding:8px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $gray-100;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .next-step-col {
+    padding-left: 0;
+  }
+}
