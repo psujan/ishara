@@ -1,14 +1,14 @@
 import Image1 from "../../../assets/images/projectimg1.jpg";
 import Image2 from "../../../assets/images/projectimg2.jpg";
 import Image3 from "../../../assets/images/projectimg3.png";
+import useWindowDimensions from "../../../hooks/useWindowDimensions";
 
 import SimpleImageSlider from "react-simple-image-slider";
 const images = [{ url: Image1 }, { url: Image2 }, { url: Image3 }];
 
 export default function Projects() {
-  const handleCompleteSlide = () => {
-    console.log("slide completed");
-  };
+  
+  const { width } = useWindowDimensions();
 
   return (
     <section className="section">
@@ -42,19 +42,18 @@ export default function Projects() {
             </div>
           </div>
 
-          <div className="col-sm-12 col-lg-6 project-col d-flex justify-content-end">
+          <div className="col-sm-12 col-lg-6 project-col d-flex justify-content-center justify-content-lg-end">
             <div className="project-image-wrap">
               <div className="circle">
                 <div className="project-img">
                   {/* <img src={App1} alt="" /> */}
                   <SimpleImageSlider
-                    width={320}
-                    height={250}
+                    width={width < 400 ? 250 : 320}
+                    height={width < 400 ? 170 : 250}
                     images={images}
                     showBullets={false}
                     showNavs={false}
                     autoPlay={true}
-                    onCompleteSlide={() => handleCompleteSlide()}
                     bgColor="#fff"
                   />
                 </div>

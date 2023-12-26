@@ -57,12 +57,25 @@
   .project-image-wrap {
     .circle {
       .project-img {
-        max-width: 80%;
+        // max-width: 80%;
         margin: 0 auto;
         right: -10px;
         .rsis-image {
           max-width: 80% !important;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .project-image-wrap {
+    .circle {
+      position: relative;
+      width: 280px;
+      height: 280px;
+      .project-img {
+        right: 15px;
       }
     }
   }
