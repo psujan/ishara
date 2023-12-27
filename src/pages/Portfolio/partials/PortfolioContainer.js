@@ -4,6 +4,9 @@ import Portfolio3 from "../../../assets/images/portfolio3.png";
 import Portfolio4 from "../../../assets/images/portfolio4.png";
 import Portfolio5 from "../../../assets/images/portfolio5.jpg";
 import Portfolio6 from "../../../assets/images/portfolio6.png";
+import Portfolio7 from "../../../assets/images/portfolio7.jpg";
+import Portfolio8 from "../../../assets/images/portfolio8.png";
+import Portfolio9 from "../../../assets/images/portfolio9.jpg";
 
 const PORTFOLIO = [
   {
@@ -35,6 +38,21 @@ const PORTFOLIO = [
     img: Portfolio6,
     name: "Mc Pastry",
     desc: "Ecommerce For a  renowned bakery",
+  },
+  {
+    img: Portfolio7,
+    name: "S Daunne",
+    desc: "Branding For A  Marketplace",
+  },
+  {
+    img: Portfolio8,
+    name: "Acrux",
+    desc: "Cloud Solution For Connecting Investors",
+  },
+  {
+    img: Portfolio9,
+    name: "Lhotse",
+    desc: "App for Pet Helathcare",
   },
 ];
 export default function PortfolioContainer() {
