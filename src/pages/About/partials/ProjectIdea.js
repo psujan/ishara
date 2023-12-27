@@ -3,7 +3,7 @@ export default function ProjectIdea() {
     <section className="section section-gradient">
       <div className="container">
         <h2 className="section-heading text-center">Got A Project ?</h2>
-        <div className="row g-5">
+        <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-6 mb-3 bg-white rounded">
             <form class="row g-3 p-4">
               <div class="col-md-6">
@@ -59,7 +59,7 @@ export default function ProjectIdea() {
             </form>
           </div>
           <div className="col-sm-12 col-md-12 col-lg-6 next-step-col">
-            <h5 className="fs-5 mb-4 fw-bold">Next Steps ...</h5>
+            <h5 className="fs-5 mb-4 px-3 fw-bold">Next Steps ...</h5>
             <ul class="next-steps">
               <li className="lh-content">
                 We will reach out to you within 24 hrs to book a free
