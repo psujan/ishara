@@ -11,9 +11,12 @@ export default function FeaturedBlog() {
           <img src={BlogImg1} alt="" className="img-fluid" />
         </div>
         <div className="blog-desc">
-          <h2 className="section-heading pt-4">
-            A RoadMap To Mobile App Development
-          </h2>
+          <Link to="/blog/detail">
+            <h2 className="section-heading pt-4">
+              A RoadMap To Mobile App Development
+            </h2>
+          </Link>
+
           <p className="section-content">
             The number of mobile apps has been increasing for a long time. This
             part of software development is all about making apps that can be
@@ -33,9 +36,11 @@ export default function FeaturedBlog() {
           <img src={BlogImg3} alt="" className="img-fluid" />
         </div>
         <div className="blog-desc">
-          <h2 className="section-heading pt-4">
-            Cloud Scalability For Small And Medium Sized Business
-          </h2>
+          <Link to="/blog/detail">
+            <h2 className="section-heading pt-4">
+              Cloud Scalability For Small And Medium Sized Business
+            </h2>
+          </Link>
           <p className="section-content">
             Cloud scalability in cloud computing refers to the ability to
             increase or decrease IT resources as needed to meet changing demand.
@@ -55,9 +60,11 @@ export default function FeaturedBlog() {
           <img src={BlogImg2} alt="" className="img-fluid" />
         </div>
         <div className="blog-desc">
-          <h2 className="section-heading pt-4">
-            Utilizing Digital Marketing To Expand Your Audinces Correctly
-          </h2>
+          <Link to="/blog/detail">
+            <h2 className="section-heading pt-4">
+              Utilizing Digital Marketing To Expand Your Audinces Correctly
+            </h2>
+          </Link>
           <p className="section-content">
             Businesses leverage digital channels such as search engines, social
             media, email, and other websites to connect with current and
