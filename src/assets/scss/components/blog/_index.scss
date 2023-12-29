@@ -21,12 +21,12 @@
   }
 }
 
-.blog-card-cover {
+.blog-card-thumb {
   border-bottom: 1px solid $gray-200;
   padding: 20px 10px;
   display: flex;
-  .blog-cover-img {
-    height: 110px;
+  .blog-thumb-img {
+    height: 130px;
     overflow: hidden;
     width: 120px;
     margin-right: 18px;
@@ -36,7 +36,7 @@
     }
   }
 
-  .blog-cover-desc {
+  .blog-thumb-desc {
     h5 {
       font-size: 15px;
       font-weight: 500;
@@ -61,4 +61,3 @@
     cursor: pointer;
   }
 }
-
