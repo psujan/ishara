@@ -61,3 +61,21 @@
     cursor: pointer;
   }
 }
+
+/* styling for dummy blog content*/
+
+.blog-content{
+  font-size: 16px;
+  h5{
+    font-weight: 600;
+  }
+
+  ul{
+    margin-left:55px;
+    margin-top:20px;
+    li{
+      list-style: disc;
+
+    }
+  }
+}

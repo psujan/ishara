@@ -2,6 +2,7 @@ import useScrollingUp from "../../hooks/useScrollingUp";
 import ContactBtn from "./partials/ContactBtn";
 import HeaderMenu from "./partials/HeaderMenu";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const scrolled = useScrollingUp();
@@ -16,7 +17,7 @@ export default function Header() {
       <div className="container h-100">
         <div className="h-100 d-flex justify-content-between align-items-center">
           <div className="app-logo">
-            <span>Ishara</span>
+            <Link to="/"><span>Ishara</span></Link>
           </div>
           <nav className="header-menu d-flex align-items-center">
             <HeaderMenu></HeaderMenu>
